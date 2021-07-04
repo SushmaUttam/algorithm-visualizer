@@ -1,0 +1,26 @@
+*{
+    text-align: center;
+}
+
+#container {
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.ele {
+    
+    width: 50px;
+    background: lightblue;
+    border: 1px solid black;
+    
+    text-align: center;
+}
+
+.padding{
+    padding: 15px;
+}
+
+html, body { height: 100%; }
+
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

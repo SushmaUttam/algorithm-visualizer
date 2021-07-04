@@ -1,0 +1,27 @@
+<h1>Bubble Sort</h1>
+
+<notifier-container></notifier-container>
+
+<hr>
+
+<div>
+    <mat-form-field class="example-full-width">
+        <mat-label>Enter array elements: </mat-label>
+        <input matInput #elements type="text" name="elements">
+    </mat-form-field>
+    <br>
+    <button mat-raised-button (click)="feedArray(elements.value)" color="primary">Submit</button>
+    &nbsp;&nbsp;&nbsp;
+    <button mat-raised-button (click)="bubbleSort()" color="primary">Sort</button>
+</div>
+
+<br><br>
+
+<div id="container">
+    <span *ngFor="let ele of elementsArr" class="padding">
+        <!-- <div class="ele" style="height:{{ele*50}}px; line-height:{{ele*50}}px;"> -->
+            <div class="ele" style="height:{{ele*10}}px; line-height:{{ele*10}}px;">
+            {{ele}}
+        </div>
+    </span>
+</div>
